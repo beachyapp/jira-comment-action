@@ -1,0 +1,26 @@
+name: 'JIRA comment'
+description: 'Add a JIRA comment by issue key'
+inputs:
+  jira-user-email:
+    description: 'JIRA user email'
+    required: true
+    default: ''
+  jira-api-token:
+    description: 'JIRA API token'
+    required: true
+    default: ''
+  jira-base-url:
+    description: 'JIRA base URL'
+    required: true
+    default: ''
+  issue-key:
+    description: 'JIRA issue key'
+    required: true
+    default: ''
+  comment:
+    description: 'Comment to add to the JIRA ticket'
+    required: true
+    default: ''
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
