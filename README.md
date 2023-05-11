@@ -29,12 +29,12 @@ Comment to add to the JIRA ticket
 ```
 - name: Find JIRA issue keys by commits
   id: issue-key-from-commits
-  uses: beachyapp/jira-get-issue-key-action@v0.1
+  uses: beachyapp/jira-get-issue-key-action@v0.2
   ....
   ....
 - name: Add comment to JIRA issue
   id: jira-comment
-  uses: beachyapp/jira-comment-action@v0.1
+  uses: beachyapp/jira-comment-action@v0.2
   with:
     comment: This is a sample comment
     issue-key: ${{steps.issue-key-from-commits.outputs.key}}
